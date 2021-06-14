@@ -1,0 +1,10 @@
+.BckImgFixed{
+    background-image: url("../images/imagen_pequena.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+}
+
+div{
+    color: whitesmoke;
+}

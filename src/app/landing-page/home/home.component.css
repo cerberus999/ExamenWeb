@@ -1,0 +1,11 @@
+img{
+    height: 150px;
+}
+
+div{
+    color: black;
+}
+
+div .cardBody{
+    height: 150px
+}
