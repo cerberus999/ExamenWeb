@@ -1,8 +1,8 @@
 .BckImgFixed{
-    background-image: url("../images/imagen_pequena.jpg");
+    background-image: url("../../assets/img/imagen_pequena.jpg");
     background-attachment: fixed;
     background-size: cover;
-    height: 80vh;
+    height: 71vh;
 }
 
 div{

@@ -17,7 +17,7 @@
                   [ngClass]="{'is-invalid': submitted && f.firstName.errors}"
                 >
                 <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
-                  <div *ngIf="f.firstName.errors.required">User required</div>
+                  <div *ngIf="f.firstName.errors.required">Nombre requerido</div>
                 </div>
               </div>
               <div class="mb-3 col">
@@ -26,9 +26,10 @@
                   formControlName="lastName"
                   type="text" 
                   class="form-control"
+                  [ngClass]="{'is-invalid': submitted && f.user.errors}"
                 >
                 <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
-                  <div *ngIf="f.lastName.errors.required">Password required</div>
+                  <div *ngIf="f.lastName.errors.required">Apellido requerido</div>
                 </div>
               </div>
             </div>
@@ -43,7 +44,7 @@
                   [ngClass]="{'is-invalid': submitted && f.user.errors}"
                 >
                 <div *ngIf="submitted && f.user.errors" class="invalid-feedback">
-                  <div *ngIf="f.user.errors.required">User required</div>
+                  <div *ngIf="f.user.errors.required">Usuario requerido</div>
                 </div>
               </div>
               <div class="mb-3 col">
@@ -52,9 +53,10 @@
                   formControlName="eMail"
                   type="text" 
                   class="form-control"
+                  [ngClass]="{'is-invalid': submitted && f.eMail.errors}"
                 >
                 <div *ngIf="submitted && f.eMail.errors" class="invalid-feedback">
-                  <div *ngIf="f.eMail.errors.required">Password required</div>
+                  <div *ngIf="f.eMail.errors.required">Email requerido</div>
                 </div>
               </div>
             </div>
@@ -69,7 +71,7 @@
                   [ngClass]="{'is-invalid': submitted && f.password.errors}"
                 >
                 <div *ngIf="submitted && f.password .errors" class="invalid-feedback">
-                  <div *ngIf="f.password.errors.required">Password required</div>
+                  <div *ngIf="f.password.errors.required">Contraseña requerida</div>
                 </div>
               </div>
               <div class="mb-3 col">
@@ -78,19 +80,19 @@
                   formControlName="confirm"
                   type="text" 
                   class="form-control"
+                  [ngClass]="{'is-invalid': submitted && f.user.errors}"
                 >
                 <div *ngIf="submitted && f.confirm.errors" class="invalid-feedback">
-                  <div *ngIf="f.confirm.errors.required">Password required</div>
+                  <div *ngIf="f.confirm.errors.required">Confimacion requerida</div>
                 </div>
               </div>
             </div>
-
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="submit" class="btn btn-outline-success" >Registrar</button>
+            </div>
           </form>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="submit" class="btn btn-outline-success" >Registrar</button>
-        </div>
-      </div>
     </div>
   </div>
